@@ -1,45 +1,55 @@
 package br.com.zup.AgendaZupers.controller.dtos;
 
-import java.time.LocalDateTime;
+import java.sql.Time;
+import java.util.Date;
 
 public class CadastroDto {
-    private String titulo;
-    private LocalDateTime dataHora;
-    private String descricao;
-    private String localizacao;
-    private String participantes;
-    private int id;
-    private String status;
+    private Date dataInicio;
+    private Date dataFim;
+    private Time horaInicio;
+    private Time horaFim;
+    private EventoDto evento;
 
-    //PADRAO BEN
+    // Construtor padrão
     public CadastroDto() {}
 
-    public String getTitulo() {return titulo;}
+    public Date getDataInicio() {
+        return dataInicio;
+    }
 
-    public void setTitulo(String titulo) {this.titulo = titulo;}
+    public void setDataInicio(Date dataInicio) {
+        this.dataInicio = dataInicio;
+    }
 
-    public LocalDateTime getDataHora() {return dataHora;}
+    public Date getDataFim() {
+        return dataFim;
+    }
 
-    public void setDataHora(LocalDateTime dataHora) {this.dataHora = dataHora;}
+    public void setDataFim(Date dataFim) {
+        this.dataFim = dataFim;
+    }
 
-    public String getDescricao() {return descricao;}
+    public Time getHoraInicio() {
+        return horaInicio;
+    }
 
-    public void setDescricao(String descricao) {this.descricao = descricao;}
+    public void setHoraInicio(Time horaInicio) {
+        this.horaInicio = horaInicio;
+    }
 
-    public String getLocalizacao() {return localizacao;}
+    public Time getHoraFim() {
+        return horaFim;
+    }
 
-    public void setLocalizacao(String localizacao) {this.localizacao = localizacao;}
+    public void setHoraFim(Time horaFim) {
+        this.horaFim = horaFim;
+    }
 
-    public String getParticipantes() {return participantes;}
+    public EventoDto getEvento() {
+        return evento;
+    }
 
-    public void setParticipantes(String participantes) {this.participantes = participantes;}
-
-    public int getId() {return id;}
-
-    public void setId(int id) {this.id = id;}
-
-    public String getStatus() {return status;}
-
-    public void setStatus(String status) {this.status = status;}
-
+    public void setEvento(EventoDto evento) {
+        this.evento = evento;
+    }
 }
