@@ -1,4 +1,4 @@
-package br.com.zup.AgendaZupers.controller.dtos;
+package br.com.zup.AgendaZupers.controllers.dtos;
 
 import java.sql.Time;
 import java.util.Date;
@@ -10,7 +10,7 @@ public class CadastroDto {
     private Time horaFim;
     private EventoDto evento;
 
-    // Construtor padrão
+    // PADRAO BEN
     public CadastroDto() {}
 
     public Date getDataInicio() {
